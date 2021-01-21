@@ -1,0 +1,7 @@
+package rukshanu.core_java.lesson02;
+
+public class Encapsulation {
+	public void inClassWork() {
+		Systej.out.println(this.getClass().getSimpleName)
+	}
+}

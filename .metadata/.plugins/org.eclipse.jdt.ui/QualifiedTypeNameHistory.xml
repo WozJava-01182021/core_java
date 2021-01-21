@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.concurrent.ThreadLocalRandom"/>
+    <fullyQualifiedTypeName name="rukshanu.core_java.common.animal.mammals.Monkey"/>
+    <fullyQualifiedTypeName name="rukshanu.core_java.common.animal.mammals.Horse"/>
+    <fullyQualifiedTypeName name="rukshanu.core_java.common.animal.Animal"/>
+    <fullyQualifiedTypeName name="rukshanu.core_java.common.animal.fish.Tuna"/>
+    <fullyQualifiedTypeName name="rukshanu.core_java.common.animal.mammals.Elephant"/>
+    <fullyQualifiedTypeName name="rukshanu.core_java.common.animal.mammals.Lion"/>
+</qualifiedTypeNameHistroy>
