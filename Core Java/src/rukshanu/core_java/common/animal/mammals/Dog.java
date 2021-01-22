@@ -1,5 +1,7 @@
 package rukshanu.core_java.common.animal.mammals;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 import rukshanu.core_java.common.animal.Pet;
 
 public class Dog extends Mammal implements Pet{
@@ -23,8 +25,30 @@ public class Dog extends Mammal implements Pet{
 	}
 	@Override
 	public void beFriendly() {
-		System.out.println(name + " licks your face!");
+		String describe = name + " the " + breed;	
+	System.out.println(describe + " licks your face.");	
 	}
-	
-
-}
+	//Overloading method with a Return Array of type dog
+	//Overloading method with a Return Array of type dog
+		public Dog[] reproduce(int number) {
+			Dog[] litter = new Dog[number];
+			if (getSex() == Sex.MALE) {
+				System.out.println("Male " + getType()+ " looking for female" + getType());
+				return null;
+			}
+			
+			if(getAge() > MATURITY) {
+				for (int i=0; i<litter.length; i++) {
+					Dog baby = new Dog();
+					if (ThreadLocalRandom.current().nextBoolean()) {
+						baby.setSex(Sex.MALE);
+					}
+					litter[i] = baby;
+				}
+			}else {
+				return null;
+			}
+			
+			return litter;
+		}
+	}
