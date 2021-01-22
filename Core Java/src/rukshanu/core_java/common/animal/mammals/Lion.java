@@ -2,7 +2,7 @@ package rukshanu.core_java.common.animal.mammals;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Lion extends Mammal {
+public class Lion extends Carnivora {
 	//***********************Variables Section*************************
 	
 	
