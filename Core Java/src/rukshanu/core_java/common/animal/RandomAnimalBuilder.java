@@ -3,11 +3,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
-import rukshanu.core_java.common.animal.mammals.Elephant;
+import rukshanu.core_java.common.animal.birds.*;
+import rukshanu.core_java.common.animal.mammals.*;
+import rukshanu.core_java.common.animal.fish.*;
 import rukshanu.core_java.common.animal.mammals.Horse;
 import rukshanu.core_java.common.animal.mammals.Lion;
 import rukshanu.core_java.common.animal.mammals.Mammal;
 import rukshanu.core_java.common.animal.mammals.Monkey;
+import rukshanu.core_java.common.animal.mammals.Whale;
 public class RandomAnimalBuilder {
 //Variables Seciton
 	
@@ -26,10 +29,39 @@ public class RandomAnimalBuilder {
 		return result;
 	}
 	
+	private Animal buildRandom() {
+		Animal a = null;
+		switch (ThreadLocalRandom.current().nextInt(6)) {
+		case 0:
+			a = buildBird(); break;
+		case 1:
+			a = buildMammal(); break;
+		}
+		return a;
+	}
+	private Bird buildBird() {
+		Bird newBird = null;
+		
+		switch (ThreadLocalRandom.current().nextInt(3)){
+			case 0:
+				newBird = new Hawk(); break;
+			case 1:
+				newBird = new Monkey(); break;
+			case 2:
+				newBird = new Lion(); break;
+			case 3:
+				newMammal = new Horse(); break;
+			case 4:
+				newMammal = new Whale(); break;
+			case 5:
+				newMammal = new Dog(); break;
+		}
+		return newMammal;
+	}
 	private Mammal buildMammal() {
 		Mammal newMammal = null;
 		
-		switch (ThreadLocalRandom.current().nextInt(4)){
+		switch (ThreadLocalRandom.current().nextInt(5)){
 			case 0:
 				newMammal = new Elephant(); break;
 			case 1:
@@ -38,6 +70,10 @@ public class RandomAnimalBuilder {
 				newMammal = new Lion(); break;
 			case 3:
 				newMammal = new Horse(); break;
+			case 4:
+				newMammal = new Whale(); break;
+			case 5:
+				newMammal = new Dog(); break;
 		}
 		return newMammal;
 	}

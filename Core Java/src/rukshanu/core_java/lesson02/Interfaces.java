@@ -25,14 +25,20 @@
 import rukshanu.core_java.common.animal.mammals.*;
 
 public class Interfaces {
+	
 	public void inClassWork() {
-		System.out.println(this.getClass().getSimpleName() + ".inClassWor()");
-		
-		System.out.println("==========================================================\n\n");
+		System.out.println(this.getClass().getSimpleName() + ".inClassWork");
 		testPetInterface();
+		testCarnivoreInterface();
+		// Student Exercise: Make Fish implement Carnivore and test it in a method in this class
+		testFishClass();
+		
+		System.out.println("===================================================================================================\n\n");
 	}
+	
 	private void testPetInterface() {
-		System.out.println("1. Test the Pet Interface");
+		System.out.println("1. Test the Pet interface");
+		
 		Dog aDog = new Dog();
 		System.out.println(aDog);
 		aDog.setName("Lassie");
@@ -47,8 +53,28 @@ public class Interfaces {
 		
 		Horse aHorse = new Horse();
 		System.out.println(aHorse);
-		aHorse.setName("Mr. Ed");
-		aHorse.setBreed("Mustang");
-		aHorse.beFriendly();
+		aHorse.setName("Shadowfax");
+		aHorse.setBreed("rohan");
+		
 	}
+	
+	private void testCarnivoreInterface() {
+		System.out.println("Test the Carnivore interface");
+		Lion simba = new Lion();
+		simba.hunt();
+		
+		Dog abe = new Dog();
+		abe.setName("Abe");
+		abe.hunt();
+		
+		Cat ditto = new Cat();
+		ditto.setName("Ditto");
+		ditto.hunt();
+	}
+	private void testFishClass() {
+		System.out.println("Test the Fish Class");
+		
+	}
+	
+
 }

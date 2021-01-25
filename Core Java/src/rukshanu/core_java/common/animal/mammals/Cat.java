@@ -2,31 +2,42 @@ package rukshanu.core_java.common.animal.mammals;
 
 import rukshanu.core_java.common.animal.Pet;
 
-public class Cat extends Carnivora implements Pet{
-
+public class Cat extends Carnivora implements Pet {
+	// Supports Nameable interface
 	private String name;
-	public String getName() {return name;}	
-	public void setName(String s) {name = s;	}
+	public String getName() { return name; }
+	public void setName(String n) { name = n; }
+	
+	//Supports Domesticatable interface
+	private String breed = "";
+	public String getBreed() { return breed; }
+	public void setBreed(String b) { breed = b; }
+	
+	
+	//====================Constructors and Intialization Blocks Section========================
 	
 	public Cat() {
 		setType("cat");
-		name = "";
 		MAX_AGE = 20;
 		MATURITY = 2;
+		prey.add("tree mouse");
+		prey.add("kibble");
+		prey.add("bird");
+		prey.add("gecko");
+		prey.add("rabbit");
 	}
 	
-	String breed;
-	@Override
-	public String getBreed() {return breed;	}
-	@Override
-	public void setBreed(String b) { breed = b; }
+	
+	//===================================Methods Section=======================================
+	//Supports the Pet Interface
 	@Override
 	public boolean hasLicense() {
-		return true;
+		return false;
 	}
 	@Override
 	public void beFriendly() {
-		System.out.println(name + " rubs against your leg!");
+		String describe = name + " the " +breed;
+		System.out.println(describe + " rubs against your leg.");
 	}
 
 }

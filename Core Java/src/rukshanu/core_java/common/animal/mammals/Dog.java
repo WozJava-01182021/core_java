@@ -3,8 +3,8 @@ package rukshanu.core_java.common.animal.mammals;
 import java.util.concurrent.ThreadLocalRandom;
 
 import rukshanu.core_java.common.animal.Pet;
-
-public class Dog extends Mammal implements Pet{
+import rukshanu.core_java.common.animal.*;
+public class Dog extends Carnivora implements Pet{
 
 	private String name;
 	public String getName() {return name;}	

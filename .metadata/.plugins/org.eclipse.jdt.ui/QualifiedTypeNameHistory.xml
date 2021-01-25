@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.concurrent.ThreadLocalRandom"/>
     <fullyQualifiedTypeName name="rukshanu.core_java.common.animal.mammals.Monkey"/>
     <fullyQualifiedTypeName name="rukshanu.core_java.common.animal.mammals.Horse"/>
-    <fullyQualifiedTypeName name="rukshanu.core_java.common.animal.Animal"/>
     <fullyQualifiedTypeName name="rukshanu.core_java.common.animal.fish.Tuna"/>
     <fullyQualifiedTypeName name="rukshanu.core_java.common.animal.mammals.Elephant"/>
     <fullyQualifiedTypeName name="rukshanu.core_java.common.animal.mammals.Lion"/>
+    <fullyQualifiedTypeName name="rukshanu.core_java.common.Nameable"/>
+    <fullyQualifiedTypeName name="rukshanu.core_java.common.animal.Domesticatable"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="rukshanu.core_java.common.animal.Pet"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.ThreadLocalRandom"/>
+    <fullyQualifiedTypeName name="rukshanu.core_java.common.animal.Sex"/>
+    <fullyQualifiedTypeName name="rukshanu.core_java.common.animal.mammals.Whale"/>
+    <fullyQualifiedTypeName name="rukshanu.core_java.common.animal.mammals.Dog"/>
+    <fullyQualifiedTypeName name="rukshanu.core_java.common.animal.birds.Bird"/>
+    <fullyQualifiedTypeName name="rukshanu.core_java.common.animal.Animal"/>
 </qualifiedTypeNameHistroy>

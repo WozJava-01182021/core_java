@@ -18,8 +18,6 @@ public class Lesson2 {
 		//Lesson 2 Interfaces
 		Interfaces testInterfaces = new Interfaces();
 		testInterfaces.inClassWork();
-		//Lesson 2 Polymorphism
-//		Interfaces testPolymorphism = new Polymorphism();
-//		testPolymorphism.inClassWork();
+
 	}
 }

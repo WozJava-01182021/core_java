@@ -11,8 +11,8 @@ public class Person {
 
    // Default constructor
    Person(){
-       firstName = "";
-       lastName = "";
+       firstName = "John";
+       lastName = "Doe";
        age = 0;
    };
    
@@ -50,22 +50,40 @@ public class Person {
 		   age = 0;
 	   };
    };
-   // Print all the data for a person
-   public void print()
-   {
-     System.out.println("Name: " + firstName);
-     System.out.println("Email: " + lastName);
-     System.out.println("Phone Number: " + age);
+   private void validateAge() {
+       if(age < 0) {
+           age = 0;
+           System.out.println("Attempted to set age to an invalid value. Setting age to 0 instead.");
+       }
+   }
+   public String getFirstName() {
+       return firstName;
+   }
+
+   public void setFirstName(String firstName) {
+       this.firstName = firstName;
+   }
+
+   public String getLastName() {
+       return lastName;
+   }
+
+   public void setLastName(String lastName) {
+       this.lastName = lastName;
+   }
+
+   public int getAge() {
+       return age;
+   }
+   public void setAge(int age) {
+       this.age = age;
+       validateAge();
    }
 
    // main method for testing
-   public static void main(String[] args)
+   public void main(int years)
    {
-      // call the constructor to create a new person
-      Person p1 = new Person();
-      // call p1's print method
-      p1.print();
-      Person p2 = new Person();
-      p2.print();
+      age = years;
+      validateAge();
    }
 }
