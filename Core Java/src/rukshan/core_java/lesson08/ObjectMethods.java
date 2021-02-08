@@ -14,7 +14,7 @@
 package rukshan.core_java.lesson08;
 
 import rukshan.core_java.common.animal.Sex;
-import rukshan.core_java.common.animal.mammal.Dog;
+import rukshan.core_java.common.animal.domestic.Dog;
 import rukshan.core_java.common.animal.mammals.Lion;
 
 public class ObjectMethods {

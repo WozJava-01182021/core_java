@@ -14,8 +14,8 @@ package rukshan.core_java.lesson03;
 
 import rukshan.core_java.common.animal.mammals.*;
 import rukshan.core_java.common.animal.*;
-import rukshan.core_java.common.animal.mammal.Cat;
-import rukshan.core_java.common.animal.mammal.Dog;
+import rukshan.core_java.common.animal.domestic.Cat;
+import rukshan.core_java.common.animal.domestic.Dog;
 import rukshan.core_java.common.animal.mammal.Horse;
 
 public class VariableCasting {

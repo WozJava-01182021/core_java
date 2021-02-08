@@ -3,7 +3,7 @@ package rukshan.core_java.lesson08;
 import java.util.ArrayList;
 import java.util.List;
 
-import rukshan.core_java.common.animal.mammal.Dog;
+import rukshan.core_java.common.animal.domestic.Dog;
 
 public class UnderstandingGenerics {
 

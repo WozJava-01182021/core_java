@@ -1,5 +1,5 @@
 package rukshan.core_java.lesson01;
-//import rukshan.core_java.Definitions; <--- it already knows because they are in the same place
+import rukshan.core_java.lesson01.Definitions;// <--- it already knows because they are in the same place -->
 
 public class Lesson1 {
 
