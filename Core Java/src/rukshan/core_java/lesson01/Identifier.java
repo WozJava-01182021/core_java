@@ -13,7 +13,7 @@ package rukshan.core_java.lesson01;
  *  
  */
 
-public class Indentifier {
+public class Identifier {
 	String test = "instance variable";
 	
 	public void inClassWork() { // anything inside is considered LOCAL VARIABLES 

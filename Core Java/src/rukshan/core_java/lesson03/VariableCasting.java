@@ -16,7 +16,7 @@ import rukshan.core_java.common.animal.mammals.*;
 import rukshan.core_java.common.animal.*;
 import rukshan.core_java.common.animal.domestic.Cat;
 import rukshan.core_java.common.animal.domestic.Dog;
-import rukshan.core_java.common.animal.mammal.Horse;
+import rukshan.core_java.common.animal.domestic.Horse;
 
 public class VariableCasting {
 	
@@ -53,11 +53,11 @@ public class VariableCasting {
 		anim = h; // this IS POSSIBLE because a horse is an animal
 		mam = h;
 		
-// Downcasting is going from a general type to a more specifc type  <===========================================
-		// WHEN DOWNCASTING WE MUST BE EXPLCIT!! <== CAST
+// Downcasting is going from a general type to a more specific type  <===========================================
+		// WHEN DOWNCASTING WE MUST BE EXPLICIT!! <== CAST
 		
 		anim = new Lion(); // can't cast this because a dog is not a lion!!
-		carn = (Carnivore)anim; // We have to CAST to be EXPLCIT~
+		carn = (Carnivore)anim; // We have to CAST to be EXPLICIT~
 		
 		anim = c; 
 		anim = d;
@@ -94,7 +94,7 @@ public class VariableCasting {
 			}
 		
 		
-	}; // closes ANIMALHOSPITAL
+	}; // closes ANIMAL_HOSPITAL
 		
 		
 	private void castPrimitives() {

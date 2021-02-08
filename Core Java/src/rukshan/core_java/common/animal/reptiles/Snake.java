@@ -2,6 +2,11 @@ package rukshan.core_java.common.animal.reptiles;
 
 public class Snake extends Reptile {
 
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 3014021861134353676L;
+
 	public Snake() {
 		setType("snake");
 		MAX_AGE= 100;
@@ -9,7 +14,7 @@ public class Snake extends Reptile {
 		prey.add("swans");
 		prey.add("snakes");
 		prey.add("rat");
-		prey.add("squirels");
+		prey.add("squirrels");
 	}
 	
 //	@Override

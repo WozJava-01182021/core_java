@@ -8,6 +8,11 @@ import rukshan.core_java.common.animal.Carnivore;
 
 public abstract class Reptile extends Animal implements Carnivore {
 	
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
+
 	protected List<String> prey = new ArrayList<>();
 	
 	protected String preyFound = null;

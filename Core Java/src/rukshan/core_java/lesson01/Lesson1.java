@@ -1,5 +1,5 @@
 package rukshan.core_java.lesson01;
-import rukshan.core_java.lesson01.Definitions;// <--- it already knows because they are in the same place -->
+//import rukshan.core_java.lesson01.Definitions;// <--- it already knows because they are in the same place -->
 
 public class Lesson1 {
 
@@ -19,8 +19,8 @@ public class Lesson1 {
 		Inheritance bothCatandDog = new Inheritance();
 		bothCatandDog.inClassWork();
 		
-		Indentifier learnIndentifiers = new Indentifier();
-		learnIndentifiers.inClassWork();
+		Identifier learnIdentifiers = new Identifier();
+		learnIdentifiers.inClassWork();
 		
 		// Lesson 1 Strings
 		WorkingWithStrings concatenate = new WorkingWithStrings();
