@@ -12,7 +12,7 @@ public class HandsOn {
 		System.out.println(ticketPrices(17, true));
 	}
 	public static String ticketPrices(int age, boolean isStudent) {
-		String rate = null;
+		String rate = "Tickets are $10";
 		if (age < 0) {
 			return rate = "Invalid age";
 		}
@@ -23,9 +23,7 @@ public class HandsOn {
 			return rate = "Senior Citizen Rate: $7";
 		} else if (child || student){
 			return rate = "Child/Students Rate: $8";
-		} else {
-			return rate = "Tickets are $10";
 		}
-		
+		return rate;
 	}
 }

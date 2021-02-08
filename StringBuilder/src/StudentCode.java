@@ -1,6 +1,4 @@
-import java.util.*;
 import java.lang.StringBuilder;
-import java.io.*;
 
 class StudentCode {
 
